@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#050506" />
+<title>AirPods Pro 2 — Silence the world. Hear every detail.</title>
+<meta name="description" content="AirPods Pro (2nd generation) with up to 2x more Active Noise Cancellation, Adaptive Audio, Personalised Spatial Audio and a USB-C charging case." />
+
+<link rel="preload" as="image" href="assets/img/hero-buds.webp" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23050506'/%3E%3Ccircle cx='12' cy='12' r='4.2' fill='%23f5f5f7'/%3E%3Crect x='10.6' y='13' width='2.8' height='10' rx='1.4' fill='%23f5f5f7'/%3E%3Ccircle cx='22' cy='12' r='4.2' fill='%234ad9ff'/%3E%3Crect x='20.6' y='13' width='2.8' height='10' rx='1.4' fill='%234ad9ff'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Reading progress -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a class="brand" href="#overview" aria-label="AirPods Pro 2 — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="11" cy="11" r="4.6" fill="currentColor"/>
+        <rect x="9.6" y="12" width="2.9" height="11" rx="1.45" fill="currentColor"/>
+        <circle cx="21" cy="11" r="4.6" fill="currentColor" opacity=".55"/>
+        <rect x="19.6" y="12" width="2.9" height="11" rx="1.45" fill="currentColor" opacity=".55"/>
+      </svg>
+      <span class="brand__text">AirPods <em>Pro</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#sound" class="nav__link">Sound</a>
+      <a href="#features" class="nav__link">Features</a>
+      <a href="#design" class="nav__link">Design</a>
+      <a href="#battery" class="nav__link">Battery</a>
+      <a href="#specs" class="nav__link">Specs</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--ghost btn--sm nav__buy" href="#buy">
+        <span>Buy</span>
+        <span class="price-inline">from $249</span>
+      </a>
+      <a class="cart-btn" id="cartBtn" href="checkout.html" aria-label="Shopping bag, 0 items" data-cart-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1.2 12.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="cart-btn__count" id="cartCount" data-cart-count data-empty="true">0</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="overview">
+    <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">
+          <span class="dot"></span> AirPods Pro <span class="eyebrow__dim">· 2nd generation</span>
+        </p>
+        <h1 class="hero__title reveal" data-delay="1">
+          Silence the world.<br />
+          <span class="grad">Hear every detail.</span>
+        </h1>
+        <p class="hero__sub reveal" data-delay="2">
+          Up to 2× more Active Noise Cancellation. Adaptive Audio that reads the room.
+          Personalised Spatial Audio that puts you in it. Now with USB‑C.
+        </p>
+
+        <div class="hero__cta reveal" data-delay="3">
+          <a class="btn btn--primary" href="#buy">
+            Buy from $249
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--link" href="#sound">
+            <span class="play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+            </span>
+            Hear the difference
+          </a>
+        </div>
+
+        <ul class="hero__meta reveal" data-delay="4">
+          <li>Free engraving</li>
+          <li>Free delivery</li>
+          <li>14-day returns</li>
+        </ul>
+      </div>
+
+      <div class="hero__stage reveal" data-delay="2">
+        <div class="hero__halo" aria-hidden="true"></div>
+        <img class="hero__img" id="heroImg" src="assets/img/hero-buds.webp"
+             alt="Two white AirPods Pro 2 earbuds floating in a dark studio" width="1400" height="764" />
+        <div class="hero__badge" aria-hidden="true">
+          <span class="hero__badge-num">−48</span><span class="hero__badge-unit">dB</span>
+          <span class="hero__badge-label">ambient noise cancelled</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Adaptive Audio</span><i></i><span>H2 chip</span><i></i><span>2× ANC</span><i></i>
+        <span>Personalised Spatial Audio</span><i></i><span>30 h battery</span><i></i><span>USB‑C</span><i></i>
+        <span>IP54</span><i></i><span>Adaptive Audio</span><i></i><span>H2 chip</span><i></i><span>2× ANC</span><i></i>
+        <span>Personalised Spatial Audio</span><i></i><span>30 h battery</span><i></i><span>USB‑C</span><i></i>
+        <span>IP54</span><i></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ANC DEMO ================= -->
+  <section class="sound section" id="sound">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Active Noise Cancellation</p>
+        <h2 class="h2">Turn the volume of the world<br />all the way down.</h2>
+        <p class="section__lede">
+          Drag the control. The H2 chip fires 48,000 noise‑cancelling adjustments per second,
+          so the room around you simply stops asking for attention.
+        </p>
+      </div>
+
+      <div class="anc reveal" data-delay="1">
+        <div class="anc__stage">
+          <canvas id="ancCanvas" aria-hidden="true"></canvas>
+          <div class="anc__readout">
+            <span class="anc__mode" id="ancMode">Noise Cancellation</span>
+            <span class="anc__db"><b id="ancDb">−48</b> dB ambient noise</span>
+          </div>
+          <div class="anc__tip" id="ancTip">Drag to feel the difference</div>
+        </div>
+
+        <div class="anc__controls">
+          <div class="anc__scale" aria-hidden="true">
+            <span>Transparency</span><span>Adaptive</span><span>Noise Cancellation</span>
+          </div>
+          <input class="range" id="ancRange" type="range" min="0" max="100" value="100"
+                 aria-label="Noise cancellation level" aria-valuetext="Noise Cancellation, minus 48 decibels" />
+          <div class="anc__chips" role="group" aria-label="Quick modes">
+            <button type="button" class="chip" data-anc="0">Transparency</button>
+            <button type="button" class="chip" data-anc="50">Adaptive</button>
+            <button type="button" class="chip is-active" data-anc="100">Noise Cancellation</button>
+          </div>
+          <p class="anc__note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            Up to 2× more cancellation than the previous generation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Engineering</p>
+        <h2 class="h2">Small. And impossibly smart.</h2>
+        <p class="section__lede">An H2 chip, custom amplifiers and a new low‑distortion driver work together in a space smaller than your fingertip.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card card--wide reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0M7 17a5 5 0 0 1 10 0M10 20a2 2 0 0 1 4 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Adaptive Audio</h3>
+          <p>Blends Transparency and Noise Cancellation in real time, so you can hear your surroundings when you should and ignore them when you shouldn't.</p>
+          <span class="card__tag">H2 chip</span>
+        </article>
+
+        <article class="card reveal" data-delay="1">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>2× Active Noise Cancellation</h3>
+          <p>Twice the cancellation, with sound tuned to the unique shape of your ear.</p>
+        </article>
+
+        <article class="card reveal" data-delay="2">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Personalised Spatial Audio</h3>
+          <p>Dynamic head tracking keeps the stage fixed around you — in a cinema, on the train, anywhere.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="15" height="8" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20.5 11v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 11v2M9 11v2M12 11v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Up to 6 hours</h3>
+          <p>Six hours of listening on one charge. Thirty with the case. Five minutes gets you an hour.</p>
+        </article>
+
+        <article class="card reveal" data-delay="1">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.6 6 11a6 6 0 1 1-12 0c0-4.4 6-11 6-11Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>IP54 protection</h3>
+          <p>Dust, sweat and water resistant. Built for rain runs and everything after.</p>
+        </article>
+
+        <article class="card card--wide reveal" data-delay="2">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4v5M15 4v5M6 9h12v4a6 6 0 0 1-12 0V9ZM12 19v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>USB‑C, MagSafe and Find My</h3>
+          <p>One cable for everything you own. Charge on a MagSafe pad, a Qi mat or an Apple Watch charger. And if it goes missing, the case can play a sound.</p>
+          <span class="card__tag">Charging case</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DESIGN ================= -->
+  <section class="design section" id="design">
+    <div class="container design__grid">
+      <div class="design__media reveal">
+        <div class="design__frame">
+          <img src="assets/img/case.webp" alt="AirPods Pro 2 charging case open with both earbuds inside" width="1200" height="655" loading="lazy" />
+        </div>
+        <div class="design__float">
+          <span class="design__float-num">0.5 mm</span>
+          <span class="design__float-label">mesh vent, machined for pressure balance</span>
+        </div>
+      </div>
+
+      <div class="design__copy">
+        <p class="eyebrow reveal"><span class="dot"></span> Design</p>
+        <h2 class="h2 reveal" data-delay="1">Sculpted to<br />disappear.</h2>
+        <p class="section__lede reveal" data-delay="2">
+          Every curve exists to keep the seal and release the pressure. So after four hours,
+          you notice the music — not the earbuds.
+        </p>
+
+        <ol class="design__list">
+          <li class="reveal" data-delay="1">
+            <span class="design__num">01</span>
+            <div><h3>Silicone tips, four sizes</h3><p>An inward‑facing nozzle and softer tips sit deeper for a more comfortable acoustic seal.</p></div>
+          </li>
+          <li class="reveal" data-delay="2">
+            <span class="design__num">02</span>
+            <div><h3>Touch, not tap</h3><p>Press the stem to play, pause, skip or switch modes. A tiny click you feel, not hear.</p></div>
+          </li>
+          <li class="reveal" data-delay="3">
+            <span class="design__num">03</span>
+            <div><h3>A lanyard loop</h3><p>Clip the case to your bag and stop digging for it at the bottom of it.</p></div>
+          </li>
+          <li class="reveal" data-delay="4">
+            <span class="design__num">04</span>
+            <div><h3>Speaker and loop on the case</h3><p>Find My can play a sound from the case — and precision finding points the way on iPhone.</p></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIFESTYLE ================= -->
+  <section class="life" aria-label="AirPods Pro in the real world">
+    <img class="life__img" id="lifeImg" src="assets/img/lifestyle.webp"
+         alt="Woman listening to music on a neon-lit city street at night" loading="lazy" width="1600" height="873" />
+    <div class="life__scrim" aria-hidden="true"></div>
+    <div class="container life__content">
+      <blockquote class="reveal">
+        <p>“It doesn’t feel like noise reduction. It feels like the city got quieter just for me.”</p>
+        <footer>Ayesha R. — verified buyer</footer>
+      </blockquote>
+      <div class="life__stats reveal" data-delay="1">
+        <div><span class="counter" data-count="4.9" data-decimals="1">0</span><small>★ average rating</small></div>
+        <div><span class="counter" data-count="12" data-suffix="k+">0</span><small>verified reviews</small></div>
+        <div><span class="counter" data-count="98" data-suffix="%">0</span><small>would recommend</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BATTERY ================= -->
+  <section class="battery section" id="battery">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Battery</p>
+        <h2 class="h2">All day. Then some.</h2>
+        <p class="section__lede">Six hours of listening on a single charge — and thirty with the case. In a hurry? Five minutes is worth an hour.</p>
+      </div>
+
+      <div class="battery__grid">
+        <div class="battery__main reveal">
+          <div class="battery__visual" role="img" aria-label="Battery illustration showing 30 hours of total listening">
+            <span class="battery__nub" aria-hidden="true"></span>
+            <div class="battery__fill" id="batteryFill"><span class="battery__bolt">⚡</span></div>
+          </div>
+          <div class="battery__labels">
+            <div><span class="big"><span class="counter" data-count="30">0</span> h</span><small>total with charging case</small></div>
+            <div><span class="big"><span class="counter" data-count="6">0</span> h</span><small>single charge</small></div>
+            <div><span class="big"><span class="counter" data-count="5">0</span> min</span><small>= 1 hour of listening</small></div>
+          </div>
+        </div>
+
+        <ul class="battery__list reveal" data-delay="1">
+          <li>
+            <span class="battery__icon">USB‑C</span>
+            <div><h3>Charge with what you already carry</h3><p>The same cable as your Mac, iPad and iPhone 15.</p></div>
+          </li>
+          <li>
+            <span class="battery__icon">MagSafe</span>
+            <div><h3>Drop it on the pad</h3><p>MagSafe, Qi and Apple Watch chargers all work.</p></div>
+          </li>
+          <li>
+            <span class="battery__icon">Find My</span>
+            <div><h3>Never lose the case again</h3><p>Play a sound or get precision directions on iPhone.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BUY ================= -->
+  <section class="buy section" id="buy">
+    <div class="container buy__grid">
+      <div class="buy__showcase reveal">
+        <div class="buy__glow" aria-hidden="true"></div>
+        <img src="assets/img/hero-buds.webp" alt="AirPods Pro 2 earbuds" width="1400" height="764" loading="lazy" />
+        <span class="buy__finish">White · the only finish it needs</span>
+      </div>
+
+      <div class="buy__panel reveal" data-delay="1">
+        <p class="eyebrow"><span class="dot"></span> Buy</p>
+        <h2 class="buy__title">AirPods Pro <span>(2nd gen)</span></h2>
+
+        <div class="rating" aria-label="Rated 4.9 out of 5">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>4.9 · 12,480 reviews</span>
+        </div>
+
+        <div class="buy__price">
+          <span class="buy__amount" id="totalPrice">$249.00</span>
+          <span class="buy__was">$279.00</span>
+          <span class="buy__save">Save $30</span>
+        </div>
+
+        <fieldset class="option">
+          <legend>Charging case</legend>
+          <div class="option__row">
+            <label class="opt">
+              <input type="radio" name="case" value="0" data-label="USB-C" checked />
+              <span class="opt__body"><b>USB‑C</b><small>Included</small></span>
+            </label>
+            <label class="opt">
+              <input type="radio" name="case" value="49" data-label="MagSafe + AppleCare+" />
+              <span class="opt__body"><b>AppleCare+</b><small>+ $49 · 2 yrs cover</small></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="option">
+          <legend>Engraving</legend>
+          <div class="option__row">
+            <label class="opt">
+              <input type="radio" name="engrave" value="none" checked />
+              <span class="opt__body"><b>None</b><small>Keep it clean</small></span>
+            </label>
+            <label class="opt">
+              <input type="radio" name="engrave" value="on" />
+              <span class="opt__body"><b>Personalise</b><small>Free · emoji + text</small></span>
+            </label>
+          </div>
+          <div class="engrave" id="engraveWrap" hidden>
+            <label class="engrave__label" for="engraveInput">Your engraving</label>
+            <input class="engrave__input" id="engraveInput" type="text" maxlength="14" placeholder="e.g. Tamim ♪" autocomplete="off" />
+            <span class="engrave__count"><span id="engraveCount">0</span>/14</span>
+          </div>
+        </fieldset>
+
+        <div class="buy__qty">
+          <span>Quantity</span>
+          <div class="stepper">
+            <button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button>
+            <span id="qtyValue" aria-live="polite">1</span>
+            <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <button class="btn btn--primary btn--block" id="addToBag" type="button">
+          <span>Add to Bag</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a class="buy__viewbag" href="checkout.html">
+          View bag &amp; checkout
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="buy__fineprint">Free delivery · Free returns within 14 days · Engraved items are final sale</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SPECS ================= -->
+  <section class="specs section" id="specs">
+    <div class="container specs__grid">
+      <div class="specs__intro reveal">
+        <p class="eyebrow"><span class="dot"></span> Tech specs</p>
+        <h2 class="h2">The details,<br />in detail.</h2>
+        <p class="section__lede">Everything that makes the quiet possible.</p>
+      </div>
+
+      <div class="accordion reveal" data-delay="1">
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="true" aria-controls="acc1" id="acc1-btn">
+            <span>Audio</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc1" role="region" aria-labelledby="acc1-btn">
+            <dl class="specs__list">
+              <div><dt>Chip</dt><dd>Apple H2</dd></div>
+              <div><dt>Noise control</dt><dd>Active Noise Cancellation, Transparency, Adaptive Audio</dd></div>
+              <div><dt>Spatial audio</dt><dd>Personalised Spatial Audio with dynamic head tracking</dd></div>
+              <div><dt>Driver</dt><dd>Custom high‑excursion Apple driver, custom amplifier</dd></div>
+              <div><dt>Microphones</dt><dd>Three per earbud, voice isolation, acoustic mesh</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc2" id="acc2-btn">
+            <span>Battery &amp; power</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc2" role="region" aria-labelledby="acc2-btn">
+            <dl class="specs__list">
+              <div><dt>Listening time</dt><dd>Up to 6 hours (ANC on), up to 30 hours with case</dd></div>
+              <div><dt>Fast charge</dt><dd>5 minutes for up to 1 hour of listening</dd></div>
+              <div><dt>Case charging</dt><dd>USB‑C, MagSafe, Qi, Apple Watch charger</dd></div>
+              <div><dt>Case battery</dt><dd>Built‑in rechargeable lithium‑ion</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc3" id="acc3-btn">
+            <span>Fit &amp; durability</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc3" role="region" aria-labelledby="acc3-btn">
+            <dl class="specs__list">
+              <div><dt>Ear tips</dt><dd>Four sizes — XS, S, M, L</dd></div>
+              <div><dt>Resistance</dt><dd>Earbuds and case: IP54 (dust, sweat and water)</dd></div>
+              <div><dt>Controls</dt><dd>Force sensor on stem, touch control on case</dd></div>
+              <div><dt>In the box</dt><dd>AirPods Pro, charging case, ear tips, USB‑C cable</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc4" id="acc4-btn">
+            <span>Compatibility</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="acc4" role="region" aria-labelledby="acc4-btn">
+            <dl class="specs__list">
+              <div><dt>iPhone</dt><dd>iPhone 11 or later with the latest iOS</dd></div>
+              <div><dt>iPad &amp; Mac</dt><dd>Any model with the latest iPadOS or macOS</dd></div>
+              <div><dt>Apple Watch</dt><dd>Series 4 or later with the latest watchOS</dd></div>
+              <div><dt>Android</dt><dd>Bluetooth‑enabled devices (limited features)</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="reviews section" aria-label="Customer reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Loved by 12,480 people</p>
+        <h2 class="h2">Quietly a cult classic.</h2>
+      </div>
+
+      <div class="carousel reveal" data-delay="1">
+        <div class="carousel__viewport" id="carouselViewport">
+          <div class="carousel__track" id="carouselTrack">
+            <article class="review">
+              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <p>“The noise cancellation on my commute is genuinely the difference between arriving at work wound up and arriving calm.”</p>
+              <footer><span class="avatar">MK</span><div><b>Mahin K.</b><small>Verified buyer · Dhaka</small></div></footer>
+            </article>
+            <article class="review">
+              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <p>“Adaptive Audio is the feature I didn’t know I needed. It fades the traffic out but keeps the announcement at the gate.”</p>
+              <footer><span class="avatar">SL</span><div><b>Sara L.</b><small>Verified buyer · Chittagong</small></div></footer>
+            </article>
+            <article class="review">
+              <span class="stars" aria-label="4 out of 5 stars">★★★★☆</span>
+              <p>“Spatial Audio with head tracking made me re‑listen to my whole library. The case speaker has already saved me twice.”</p>
+              <footer><span class="avatar">AR</span><div><b>Arif R.</b><small>Verified buyer · Sylhet</small></div></footer>
+            </article>
+            <article class="review">
+              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <p>“Four hours in a library, no pressure, no ache. Just swapped to the small tips and forgot they were there.”</p>
+              <footer><span class="avatar">NT</span><div><b>Nusrat T.</b><small>Verified buyer · Dhaka</small></div></footer>
+            </article>
+          </div>
+        </div>
+
+        <div class="carousel__nav">
+          <button type="button" class="round-btn" id="prevReview" aria-label="Previous review">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6 8 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Choose review"></div>
+          <button type="button" class="round-btn" id="nextReview" aria-label="Next review">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="faq section" id="faq">
+    <div class="container faq__grid">
+      <div class="faq__intro reveal">
+        <p class="eyebrow"><span class="dot"></span> Questions</p>
+        <h2 class="h2">Before you<br />turn it down.</h2>
+        <p class="section__lede">Still curious? Everything else lives in the specs above.</p>
+      </div>
+
+      <div class="accordion accordion--plain reveal" data-delay="1">
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+            <span>Will AirPods Pro fit my ears?</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq1" role="region" aria-labelledby="faq1-btn">
+            <p>Four sizes of silicone tips are in the box, and the Ear Tip Fit Test in Settings tells you which gives the best seal. The inward‑facing nozzle sits deeper while keeping pressure low.</p>
+          </div>
+        </div>
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+            <span>How is this different from the first generation?</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq2" role="region" aria-labelledby="faq2-btn">
+            <p>The H2 chip doubles Active Noise Cancellation, adds Adaptive Audio and louder Transparency, improves sound across the range, and brings a USB‑C case with a speaker, lanyard loop and precision finding.</p>
+          </div>
+        </div>
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+            <span>Do they work with Android?</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq3" role="region" aria-labelledby="faq3-btn">
+            <p>Yes — they pair over Bluetooth as standard headphones, with playback and noise control working from the stems. Spatial Audio, automatic switching and Find My need an Apple device.</p>
+          </div>
+        </div>
+        <div class="acc">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
+            <span>What does engraving cost?</span><span class="acc__icon" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq4" role="region" aria-labelledby="faq4-btn">
+            <p>Nothing. Add up to 14 characters — text, numbers or emoji — and it’s laser‑etched onto the case for free. Engraved orders can’t be returned unless faulty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLOSING CTA ================= -->
+  <section class="closing">
+    <div class="closing__glow" aria-hidden="true"></div>
+    <div class="container closing__inner reveal">
+      <p class="eyebrow"><span class="dot"></span> AirPods Pro · 2nd generation</p>
+      <h2 class="closing__title">Your quiet is<br /><span class="grad">waiting.</span></h2>
+      <a class="btn btn--primary btn--lg" href="#buy">
+        Buy from $249
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="closing__note">Free engraving · Free delivery · 14‑day returns</p>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="#overview">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="11" cy="11" r="4.6" fill="currentColor"/>
+          <rect x="9.6" y="12" width="2.9" height="11" rx="1.45" fill="currentColor"/>
+          <circle cx="21" cy="11" r="4.6" fill="currentColor" opacity=".55"/>
+          <rect x="19.6" y="12" width="2.9" height="11" rx="1.45" fill="currentColor" opacity=".55"/>
+        </svg>
+        <span class="brand__text">AirPods <em>Pro</em></span>
+      </a>
+      <p>Sound that gets out of the way.</p>
+    </div>
+    <nav class="footer__col" aria-label="Product">
+      <h3>Product</h3>
+      <a href="#sound">Noise cancellation</a>
+      <a href="#features">Features</a>
+      <a href="#design">Design</a>
+      <a href="#specs">Tech specs</a>
+    </nav>
+    <nav class="footer__col" aria-label="Support">
+      <h3>Support</h3>
+      <a href="#faq">FAQ</a>
+      <a href="#buy">Delivery &amp; returns</a>
+      <a href="#specs">Compatibility</a>
+      <a href="#buy">AppleCare+</a>
+    </nav>
+    <div class="footer__col footer__col--wide">
+      <h3>Hear it first</h3>
+      <p class="footer__muted">Product news, quietly. No spam, ever.</p>
+      <form class="subscribe" id="subscribeForm" novalidate>
+        <label class="sr-only" for="subscribeEmail">Email address</label>
+        <input id="subscribeEmail" type="email" placeholder="you@email.com" required />
+        <button type="submit" aria-label="Subscribe">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="subscribe__msg" id="subscribeMsg" role="status"></p>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© <span id="year">2026</span> AirPods Pro concept landing page. A fan‑made design demo — not affiliated with Apple Inc. AirPods, AirPods Pro and AppleCare+ are trademarks of Apple Inc.</p>
+    <div class="footer__legal"><a href="#faq">Privacy</a><a href="#faq">Terms</a><a href="#buy">Cookies</a></div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Mobile sticky buy bar -->
+<div class="sticky-buy" id="stickyBuy" aria-hidden="true">
+  <div>
+    <b>AirPods Pro 2</b>
+    <small id="stickyPrice">$249.00</small>
+  </div>
+  <a class="btn btn--primary btn--sm" href="#buy">Buy now</a>
+</div>
+
+<script src="assets/js/cart.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
