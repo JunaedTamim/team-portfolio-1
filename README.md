@@ -11,9 +11,13 @@ built with plain HTML, CSS and vanilla JavaScript — no frameworks, no build st
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | All page markup and content |
+| `index.html` | Landing page markup and content |
+| `checkout.html` | Bag + checkout page |
 | `assets/css/style.css` | Design tokens, layout, components, responsive rules |
-| `assets/js/main.js` | All interactions (no dependencies) |
+| `assets/css/checkout.css` | Checkout-specific layout, forms and success state |
+| `assets/js/cart.js` | Shared localStorage bag (add, quantity, remove, badges) |
+| `assets/js/main.js` | Landing page interactions (no dependencies) |
+| `assets/js/checkout.js` | Checkout validation, totals, promos and order flow |
 | `assets/img/*.webp` | Optimised product / lifestyle imagery |
 
 ### Sections
@@ -29,6 +33,26 @@ built with plain HTML, CSS and vanilla JavaScript — no frameworks, no build st
   quantity stepper, live total and an add-to-bag flow with toasts
 - Tech-spec and FAQ accordions, review carousel with swipe/keyboard support
 - Newsletter form with validation, closing CTA, footer, mobile sticky buy bar
+
+### Checkout flow
+
+Open `checkout.html` (or the bag icon in the header / “View bag & checkout” under
+the buy button) after adding a pair.
+
+- **Bag** — line items survive page reloads via `localStorage`, with quantity
+  steppers, removal, and a free engraving/AppleCare summary per line
+- **Delivery** — country, address and two delivery speeds with live arrival
+  dates; Express adds $12
+- **Payment** — Card (with grouping, brand detection, Luhn and expiry checks),
+  Apple Pay or cash on delivery; card fields are skipped for the other methods
+- **Promo codes** — `QUIET10` for 10% off, `FREESHIP` for free delivery
+- **Totals** — recalculated on every change; the place-order button always shows
+  the current total
+- **Confirmation** — animated success screen with order number, delivery window,
+  receipt lines and a print-friendly receipt (cart is cleared)
+
+Validation runs inline on blur, blocks submission with a focus jump to the first
+invalid field, and the demo card `4242 4242 4242 4242` always succeeds.
 
 ### Notes
 

@@ -1734,3 +1734,23 @@ legend { padding: 0; }
   .reveal { opacity: 1; transform: none; }
   .battery__fill { transition: none; }
 }
+
+/* ---------- bag link under the buy button ---------- */
+.buy__viewbag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 14px;
+  width: 100%;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text-2);
+  transition: color 0.25s ease;
+}
+.buy__viewbag svg { width: 16px; height: 16px; transition: transform 0.3s var(--ease); }
+.buy__viewbag:hover { color: var(--accent); }
+.buy__viewbag:hover svg { transform: translateX(3px); }
+
+/* cart button is a link now */
+a.cart-btn { text-decoration: none; color: var(--text); }

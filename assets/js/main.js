@@ -613,8 +613,6 @@
     const minus = $("#qtyMinus");
     const plus = $("#qtyPlus");
     const addBtn = $("#addToBag");
-    const cartBtn = $("#cartBtn");
-    const cartCount = $("#cartCount");
     const engraveWrap = $("#engraveWrap");
     const engraveInput = $("#engraveInput");
     const engraveCount = $("#engraveCount");
@@ -622,7 +620,6 @@
     const engInputs = $$('input[name="engrave"]', panel);
 
     let qty = 1;
-    let cart = 0;
     let engraving = false;
 
     const money = (n) =>
@@ -675,30 +672,27 @@
         toast("Add a name or emoji to engrave — or choose None.", true);
         return;
       }
-      cart += qty;
-      cartCount.textContent = String(cart);
-      cartCount.dataset.empty = "false";
-      cartBtn.setAttribute(
-        "aria-label",
-        `Shopping bag, ${cart} item${cart === 1 ? "" : "s"}`
-      );
 
-      const label = engraving
-        ? ` · engraved “${engraveInput.value.trim()}”`
-        : "";
+      const care = unitPrice() > BASE;
+      const engravingText = engraving ? engraveInput.value.trim() : "";
+
+      if (window.AirPodsCart) {
+        window.AirPodsCart.add({
+          id: "airpods-pro-2",
+          name: "AirPods Pro 2",
+          price: unitPrice(),
+          qty,
+          care,
+          engraving: engravingText,
+        });
+      }
+
+      const label = engravingText ? ` · engraved “${engravingText}”` : "";
       toast(`Added ${qty} × AirPods Pro 2 to your bag${label}`);
       addBtn.querySelector("span").textContent = "Added to bag ✓";
       window.setTimeout(() => {
         addBtn.querySelector("span").textContent = "Add to Bag";
       }, 2200);
-    });
-
-    cartBtn.addEventListener("click", () => {
-      toast(
-        cart === 0
-          ? "Your bag is empty — add a pair to get started."
-          : `You have ${cart} item${cart === 1 ? "" : "s"} in your bag. This is a demo checkout.`
-      );
     });
 
     refresh();
